@@ -1,0 +1,92 @@
+QUESTION 1: EVEN OR ODD
+Problem
+Given an integer n, determine whether the number is Even or Odd.
+
+👉#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n % 2 == 0) {
+        cout << "Even" << endl;
+    } else {
+        cout << "Odd" << endl;
+    }
+
+    return 0;
+}
+
+
+QUESTION 2: LARGEST OF TWO NUMBERS
+Problem
+Given two integers a and b, find the larger number.
+
+👉#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    if (a > b) {
+        cout << a << endl;
+    } else {
+        cout << b << endl;
+    }
+
+    return 0;
+}
+
+
+QUESTION 3: POSITIVE, NEGATIVE OR ZERO
+Problem
+Given an integer n, determine whether it is: Positive Negative Zero
+
+👉#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n > 0) {
+        cout << "Positive" << endl;
+    } else if (n < 0) {
+        cout << "Negative" << endl;
+    } else {
+        cout << "Zero" << endl;
+    }
+
+    return 0;
+}
+
+
+QUESTION 4: SUM OF FIRST N NATURAL NUMBERS
+Problem
+Given n, calculate: 1 + 2 + 3 + ... + n
+
+👉#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        sum = sum + i;
+    }
+
+    cout << sum << endl;
+
+    return 0;
+}
